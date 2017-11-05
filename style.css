@@ -1,0 +1,331 @@
+/* Basic Style */
+body {
+  font-family: 'Space Mono', monospace;
+}
+
+.current {
+  background-color: darkorange;
+  color: black;
+}
+
+#container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#logo {
+  width: 90%;
+  height: auto;
+}
+
+nav {
+  width: 90%;
+  margin: 0 0 5% 0;
+  text-align: center;
+
+}
+nav a {
+  text-align: center;
+  text-decoration: none;
+  color: darkorange;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+/* End basic */
+
+/* Home style */
+#home-bio h3::before {
+  content: "\275d";
+}
+#home-bio h3::after {
+  content: "\275e";
+}
+#home-bio {
+  width: 80%;
+}
+#home-bio p {
+  color: darkorange;
+}
+
+#front-vid {
+  height: 400px;
+  width: 600px;
+}
+#front-vid iframe {
+  height: 100%;
+  width: 100%;
+}
+
+#flavor-txt p {
+  margin: 0;
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
+}
+#flavor-txt p:hover {
+  height: 250px;
+  width: 600px;
+  border-bottom: solid 2px darkorange;
+  overflow: visible;
+}
+#flavor-txt p::before {
+  color: white;
+  display: flex;
+  content: "\27b7";
+  background: darkorange;
+  justify-content: space-around;
+}
+/* End Home */
+
+/* Music style */
+#album-font {
+  text-align: center;
+}
+
+.wrap {
+  display: flex;
+  flex-flow: row;
+  align-self: center;
+  justify-content: space-around;
+}
+.wrap div {
+  display: flex;
+  flex-flow: column;
+  align-self: center;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.wrap img {
+  height: 300px;
+  width: auto;
+}
+#album-info {
+  width: 300px;
+}
+
+.accent {
+  color: darkorange;
+}
+
+.music-vid {
+  width: 300px;
+  height: auto;
+}
+/*End Music */
+
+/* Podcast style */
+#pod-head {
+  text-align: center;
+}
+#podcasts {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 5%;
+}
+#podcasts div {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-bottom: solid 2px black;
+  margin-bottom: 5%;
+  width: 70%;
+}
+#podcasts div:first-child audio {
+  margin-bottom: 5%;
+}
+#podcasts div a:last-of-type {
+  margin-bottom: 5%;
+}
+#podcasts img {
+  height: auto;
+  width: 300px;;
+}
+
+.pod-link {
+  text-decoration: none;
+  color: dimgray;
+}
+.pod-link:hover {
+  color: darkorange;
+}
+/* End Pod*/
+
+/* Shows Style */
+#dates-head {
+  align-self: center;
+}
+#dates {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+#dates table:nth-child(odd) {
+  color: darkorange;
+}
+/* End Show */
+
+/* Contact style */
+
+#contact {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  background: url("https://static1.squarespace.com/static/58077c5af7e0ab665f5765d5/t/5807909f725e2585176bd591/1476890784720/11825949_10153175468471365_8632103717695261836_n.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 95%;
+  height: auto;
+  color: white;
+  font-size: 1.5em;
+}
+#contact div {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: darkorange;
+  background: white;
+  width: 50%;
+  height: 500px;
+}
+#contact h1 {
+  padding: 0 5px 0 5px;
+}
+#contact p {
+  width: 90%;
+  text-align: center;
+}
+#contact div  a {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: darkorange;
+  background: white;
+  padding: 0 10px 0 10px;
+}
+/* End contact */
+
+/* Media style */
+#media {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 95%;
+}
+#media div {
+  width: 90%;
+}
+
+/* End media */
+
+/* News Style*/
+.news {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-left: solid 2px darkorange;
+  border-bottom: solid 2px darkorange;
+}
+
+.read:hover {
+  cursor: pointer;
+}
+.news-info {
+  display: flex;
+  flex-flow: column;
+  height: 0px;
+  width: 700px;
+  overflow: hidden;
+}
+.news-show {
+  display: flex;
+  flex-flow: column;
+  height: 400px;
+  width: 700px;
+  overflow: visible;
+  overflow-y: scroll;
+}
+.news-show p {
+  margin: 5%;
+}
+.news-show iframe {
+  margin: 5%;
+}
+
+.close-news {
+  border: solid 2px red;
+  border-radius: 8px;
+  width: 55px;
+  text-align: center;
+}
+.close-news:hover {
+  cursor: pointer;
+}
+
+
+/* End news */
+
+/* Merch Style */
+#merch {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+#merch div {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 2px darkorange;
+  text-align: center;
+  margin: 5%;
+}
+#merch div img {
+  height: auto;
+  width: 200px;
+}
+
+
+/* End merch*/
+
+@media screen and (max-width: 700px) {
+  #container {
+    margin: 0 auto;
+    width: 90%;
+    font-size: .75em;
+  }
+  nav {
+    display: flex;
+    flex-flow: column;
+  }
+  #front-vid {
+    height: 200px;
+    width: 300px;
+  }
+  #front-vid iframe {
+    height: 100%;
+    width: 100%;
+  }
+  #flavor-txt p:hover {
+    height: 275px;
+    width: 300px;
+  }
+  #dates {
+    font-size: 90%;
+  }
+  .news {
+    width: 90%;
+  }
+  .news h3 {
+    text-align: center;
+  }
+  .news-show {
+    width: 300px;
+  }
+  #contact {
+    font-size: 1.25em;
+  }
+}
