@@ -97,8 +97,9 @@ nav a {
   margin-right: 2%;
 }
 .wrap img {
-  height: 300px;
-  width: auto;
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
 }
 #album-info {
   width: 300px;
@@ -115,6 +116,24 @@ nav a {
 /*End Music */
 
 /* Podcast style */
+.pod-wrap {
+  display: flex;
+  flex-flow: row;
+  align-self: center;
+  justify-content: space-around;
+}
+.pod-wrap div {
+  display: flex;
+  flex-flow: column;
+  align-self: center;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.pod-wrap img {
+  height: 300px;
+  width: auto;
+}
+
 #pod-head {
   text-align: center;
 }
@@ -180,7 +199,6 @@ nav a {
   width: 95%;
   height: auto;
   color: white;
-  font-size: 1.5em;
 }
 #contact div {
   display: flex;
@@ -204,6 +222,7 @@ nav a {
   align-items: center;
   color: darkorange;
   background: white;
+  width: 200px;
   padding: 0 10px 0 10px;
 }
 /* End contact */
@@ -290,7 +309,33 @@ nav a {
 
 
 /* End merch*/
-
+@media screen and (max-width: 800px) {
+  .wrap {
+    width: 70%;
+  }
+  .wrap img {
+    width: 200px;
+  }
+  .wrap audio {
+    width: 200px;
+  }
+  #album-info {
+    width: 200px;
+  }
+  .past {
+    display: flex;
+    flex-flow: column;
+  }
+  .past iframe {
+    margin: 2%;
+  }
+  .pod-wrap {
+    width: 80%;
+  }
+  .pod-wrap img {
+    height: 200px;
+  }
+}
 @media screen and (max-width: 700px) {
   #container {
     margin: 0 auto;
@@ -314,7 +359,7 @@ nav a {
     width: 300px;
   }
   #dates {
-    font-size: 90%;
+    font-size: 80%;
   }
   .news {
     width: 90%;
@@ -325,7 +370,8 @@ nav a {
   .news-show {
     width: 300px;
   }
-  #contact {
-    font-size: 1.25em;
+  #contact div {
+    padding-right: 2%;
   }
+
 }
