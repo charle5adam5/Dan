@@ -371,7 +371,40 @@ nav a {
     width: 300px;
   }
   #contact div {
-    padding-right: 2%;
+    padding-right: 5%;
   }
-
+}
+@media screen and (max-width: 600px) {
+  #container {
+    font-size: .70em;
+  }
+  #front-vid {
+    height: 175px;
+    width: 275px;
+  }
+  #flavor-txt p:hover {
+    height: 250px;
+    width: 275px;
+  }
+  #dates {
+    font-size: 75%;
+  }
+  .news-show {
+    width: 275px;
+  }
+  .wrap img {
+    width: 175px;
+  }
+  .wrap audio {
+    width: 175px;
+  }
+  #album-info {
+    width: 175px;
+  }
+  .past iframe {
+    margin: 2%;
+  }
+  .pod-wrap img {
+    height: 175px;
+  }
 }
