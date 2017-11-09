@@ -373,6 +373,9 @@ nav a {
   #contact div {
     padding-right: 5%;
   }
+  #contact div a {
+    width: 150px;
+  }
 }
 @media screen and (max-width: 600px) {
   #container {
